@@ -1,15 +1,12 @@
 #include "main.h"
-#include <stdlib.h>
 /**
- * _abs - give the absolute of number
- * @c: the number
- * Return: Always 0 (success)
+ * _abs - this function returns positive values only
+ * @n: the number to be checked
+ * Return: positive num
  */
-int _abs(int c)
+int _abs(int n)
 {
-	int r;
-
-	r = abs(c);
-
-	return (r);
+	if (n < 0)
+		n = n * (-1);
+	return (n);
 }

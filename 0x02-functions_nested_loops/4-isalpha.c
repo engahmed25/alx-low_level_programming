@@ -1,20 +1,15 @@
-#include "main.h"
-#include <ctype.h>
-
+#include"main.h"
 /**
- * _isalpha - function that test the lowercase
- * @c: the charactar
- * Return: Always 0 (success)
+ * _isalpha - this is check if character is alpha or not
+ *
+ * @c: checks input of function
+ *
+ * Return: return 1 if c is alpha otherwise return 0
  */
 
 int _isalpha(int c)
 {
-	int n;
-
-	if (isalpha(c))
-		n = 1;
-	else
-		n = 0;
-	return (n);
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+		return (1);
+	return (0);
 }
-

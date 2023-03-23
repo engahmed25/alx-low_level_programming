@@ -1,21 +1,15 @@
-#include "main.h"
-#include <ctype.h>
-
+#include"main.h"
 /**
- * _islower - function that test the lowercase
- * @c: the charactar
- * Return: Always 0 (success)
+ * _islower - function to check if alpha is uppercase or lower.
+ *
+ * Return: return 1 if c is lowercase otherwise return 0
+ *
+ * @c: this is the variable to be checked
  */
 
 int _islower(int c)
 {
-	int n;
-
-	if (islower(c))
-		n = 1;
-	else
-		n = 0;
-	return (n);
+	if (c >= 97 && c <= 122)
+		return (1);
+	return (0);
 }
-
-

@@ -1,14 +1,13 @@
 #include "main.h"
 /**
- * add - add two numbers
- * @a: first num
- * @b: second num
- * Return: Always 0 (success)
+ * add - this is function to calc sum
+ *
+ * @a: first number
+ * @b: second number
+ *
+ * Return: sum of two numbers
  */
 int add(int a, int b)
 {
-	int res;
-
-	res = a + b;
-	return (res);
+	return (a + b);
 }
