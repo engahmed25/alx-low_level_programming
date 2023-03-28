@@ -1,13 +1,19 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * _puts - return the value of the lens of string
- * @str: the string
- * Return: Always 0
+ * _puts - prints a string followed by a new line..
+ *
+ *@str: the string to print.
+ *
  */
+
 void _puts(char *str)
 {
-	int puts(const char *str);
+	int i;
 
-	puts(str);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }

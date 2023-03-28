@@ -1,1 +1,1 @@
-this is my personal work
+# Pointers, Arrays and Strings in C
